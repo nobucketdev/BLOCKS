@@ -21,10 +21,10 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm install
+          # The flag below tells npm to ignore the React 19 version conflict
+          npm install --legacy-peer-deps 
           npm run build
         env:
-          # This pulls the secret you just made and makes it available to Vite
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Deploy 🚀
