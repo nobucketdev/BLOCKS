@@ -1,0 +1,5 @@
+{
+  "name": "Blocks IDE",
+  "description": "An educational IDE for the Blocks programming language, focusing on data structures, closures, and recursive logic with a tree-walking interpreter.",
+  "requestFramePermissions": []
+}
